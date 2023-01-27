@@ -13,17 +13,11 @@ import java.util.List;
 public class TestController {
     @Autowired
     private BookDao bookDao;
+
     @GetMapping(value = {"/admin"})
-    public String layoutTest(){
+    public String layoutTest() {
         return "forward:/admin/book/all";
     }
-    @GetMapping(value = {"/", "/home"})
-    public String index() {
-        return "index";
-    }
-    @ModelAttribute("books")
-    public List<Book> listBooks() {
-        return bookDao.findAll();
-    }
+
 
 }

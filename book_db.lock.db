@@ -1,6 +1,0 @@
-#FileLock
-#Thu Jan 26 10:18:50 MMT 2023
-server=127.0.1.1\:45381
-hostName=mypc
-method=file
-id=185ec3145b65d8d95e46595ffb036109f1c0f0bf442
