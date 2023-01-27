@@ -67,10 +67,11 @@ public class CartController {
         Set<BookDto> carts = cartService.listCart();
         int index = 0;
         for (BookDto bookDto : carts) {
-            bookDto.setQuantity(bookQuantityList.get(index));
+            bookDto.setOrderBookQuantity(bookQuantityList.get(index));
             index++;
         }
         System.out.println("=================" + carts);
+        cartService.register(customer, carts);
         return "redirect:/login";
     }
 

@@ -24,6 +24,7 @@ public class BookDto {
     private String genre;
     private String imgUrl;
     private String description;
+    private int orderBookQuantity;
     private Category category;
     private List<Integer> itemList = new ArrayList<>();
     private Author author;
@@ -68,6 +69,7 @@ public class BookDto {
                 ", publisher='" + publisher + '\'' +
                 ", price=" + price +
                 ", quantity=" + quantity +
+                ", orderBookQuantity=" + orderBookQuantity +
                 '}';
     }
 }

@@ -22,6 +22,8 @@ import java.util.Set;
 public class AccountController {
     @Autowired
     private BookDao bookDao;
+    @Autowired
+    private CartService cartService;
 
     @RequestMapping("/login")
     public String login() {
